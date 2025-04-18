@@ -1,4 +1,4 @@
-import { wsUrl } from "../constants.js";
+import { MS, wsUrl } from "../constants.js";
 import { WebSocket } from "ws";
 import { levels, messages } from "../constants.js";
 import { getRandomNumber } from "../utils/getRandomNumber.js";
@@ -12,9 +12,13 @@ socket.on("open", () => {
       message: messages[getRandomNumber(messages)],
     };
     socket.send(JSON.stringify(log));
-  }, 1000);
+  }, MS);
 });
 
 socket.on("error", (error) => {
   console.log(error);
+});
+
+socket.on("close", () => {
+  console.log("Connection closed");
 });

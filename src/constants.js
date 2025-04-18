@@ -12,4 +12,6 @@ const messages = [
   "Timeout on external request",
 ];
 
-export { wsUrl, levels, messages };
+const MS = 100;
+
+export { wsUrl, levels, messages, MS };
