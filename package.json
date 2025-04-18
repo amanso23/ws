@@ -6,15 +6,14 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node ./src/services/ws-server.js",
-    "client": "node ./src/client/dummy.js"
+    "serve": "node ./src/services/ws-server",
+    "client": "node ./src/client/dummy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.7.0",
   "dependencies": {
-    "chalk": "^5.4.1",
-    "ws": "file:"
+    "chalk": "^5.4.1"
   }
 }

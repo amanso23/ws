@@ -3,14 +3,14 @@ import { WebSocket } from "ws";
 
 const levels = ["info", "warn", "error"];
 const messages = [
-  "Consulta SQL ejecutada correctamente",
-  "Conexión a la base de datos lenta",
-  "Fallo al conectar con Redis",
-  "Servicio Auth responded in 2ms",
-  "Deprecation warning en API v1",
-  "Error 500 al guardar el pedido",
-  "Usuario no autorizado",
-  "Timeout en petición externa",
+  "SQL query executed successfully",
+  "Slow database connection detected",
+  "Failed to connect to Redis",
+  "Auth service responded in 2ms",
+  "Deprecation warning in API v1",
+  "Error 500 while saving the order",
+  "User not authorized",
+  "Timeout on external request",
 ];
 
 const socket = new WebSocket(wsUrl);
