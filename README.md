@@ -7,7 +7,7 @@ This is a simple WebSocket client built with Node.js that acts as a **log genera
 ## 📦 Requirements
 
 - Node.js
-- Dependencies installed via `npm install`
+- Dependencies installed via `pnpm install`
 
 ---
 
