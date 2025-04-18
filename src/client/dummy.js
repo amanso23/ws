@@ -1,4 +1,4 @@
-import { wsUrl } from "./constants.js";
+import { wsUrl } from "../constants.js";
 import { WebSocket } from "ws";
 
 const levels = ["info", "warn", "error"];

@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node ./ws-server",
-    "client": "node ./dummy.js"
+    "serve": "node ./src/services/ws-server.js",
+    "client": "node ./src/client/dummy.js"
   },
   "keywords": [],
   "author": "",
